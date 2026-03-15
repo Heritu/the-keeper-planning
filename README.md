@@ -28,14 +28,19 @@ Registro da interação com a IA durante o planejamento:
 
 ## 🚀 Miniguia de Estudo (Entrega Final)
 
-### 1. Resumos Estruturados do Sistema
-[COLE AQUI O RESUMO QUE O NOTEBOOKLM GERAR SOBRE AS FUNÇÕES DO SEU PROJETO]
+### . Resumo Estruturado do Sistema
+**O Projeto The Keeper** é um sistema web funcional focado no gerenciamento financeiro e controle de gastos informais. A seguir, apresento um resumo estruturado de suas funcionalidades principais, destacando o registro financeiro e o simulador de compras:
 
-### 2. Glossário de Conceitos
+*   **Registro de Gastos (Gestão de Fluxo / CRUD)**: O sistema permite o **cadastro manual e simples de todas as entradas e saídas de dinheiro**. Esses registros são salvos (persistência) utilizando um banco de dados SQLite. Além do valor, o usuário pode **categorizar os gastos** com etiquetas como "Comida", "Lazer" ou "Faculdade", o que facilita a organização e o uso de filtros no sistema.
+*   **Simulador de Compras (O Guaxinim / Análise Preditiva)**: O "Guaxinim" é o módulo de análise preditiva do sistema. Nele, o usuário pode simular a compra de um item para ver qual será o **impacto no seu saldo atual antes de efetivamente realizar a compra**. O simulador foi desenhado para ser uma ferramenta simples (MVP), baseada em cálculos aritméticos claros, que **projeta o estado futuro do seu dinheiro sem alterar os dados reais salvos no banco de dados**, funcionando como um importante alerta visual de impacto financeiro.
+*   **Painel de Saldo (Dashboard)**: Uma tela central que soma tudo o que foi cadastrado nas entradas e saídas e exibe de forma clara o valor final que o usuário tem disponível "no bolso".
+*   **Agenda de Lembretes (Vencimentos)**: Uma funcionalidade onde o usuário pode adicionar um campo de data para contas que precisam ser pagas. O sistema fornece **alertas visuais** (usando cores diferentes ou o ícone do Guaxinim) quando o vencimento da conta está se aproximando.
+
+### . Glossário de Conceitos
 * **CRUD:** Operações de Criar, Ler, Atualizar e Deletar dados no sistema.
 * **MVP:** Minimum Viable Product - versão inicial focada nas funções principais.
 * **SQLite:** Banco de dados relacional leve utilizado para persistência local.
 
-### 3. Prompts Reutilizáveis para o Projeto
+### . Prompts Reutilizáveis para o Projeto
 * "Gere uma estrutura de JSON para a rota de cadastro de despesas no Express."
 * "Atue como QA e identifique possíveis erros lógicos no simulador de compras."
